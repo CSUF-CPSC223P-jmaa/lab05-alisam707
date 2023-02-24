@@ -39,6 +39,9 @@ def paths(m, n):
     1
     """
     "*** YOUR CODE HERE ***"
+    if m == 1 or n == 1:
+        return 1
+    return paths(m, n-1) + paths(m-1, n)
 
 
 def pascal(row, column):
