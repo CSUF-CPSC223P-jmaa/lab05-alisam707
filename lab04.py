@@ -20,6 +20,9 @@ def summation(n, term):
     """
     assert n >= 1
     "*** YOUR CODE HERE ***"
+    if n == 1:
+        return term(n)
+    return term(n) + summation(n-1, term)
 
 
 def paths(m, n):
